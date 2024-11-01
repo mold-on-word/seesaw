@@ -5,38 +5,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+	<!-- Donut Chart -->
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <!-- Core CSS -->
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Chart.js 추가 -->
+    
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Equalism?</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">이퀄리즘 연구</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
                 <span class="oi oi-menu"></span> Menu
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav nav ml-auto">
                     <li class="nav-item"><a href="#overview" class="nav-link"><span>개요</span></a></li>
+                    <li class="nav-item"><a href="#methodology" class="nav-link"><span>연구방법</span></a></li>
                     <li class="nav-item"><a href="#data-collection" class="nav-link"><span>데이터 수집</span></a></li>
                     <li class="nav-item"><a href="#analysis" class="nav-link"><span>분석</span></a></li>
-                    <li class="nav-item"><a href="#implications" class="nav-link"><span>제언</span></a></li>
                     <li class="nav-item"><a href="#conclusion" class="nav-link"><span>결론</span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="hero-wrap js-fullheight">
+    <!-- Hero Section -->
+    <section class="hero-wrap js-fullheight" data-aos="fade-up">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-                <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+                <div class="col-lg-8 col-md-6 d-flex align-items-center">
                     <div class="text text-center">
                         <h1>페미니즘과 이퀄리즘</h1>
                         <h2>한국 온라인 여성혐오의 블랙박스를 열다</h2>
@@ -46,101 +62,173 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    <!-- Main Content -->
+    <section class="ftco-section ftco-no-pb goto-here" id="research-section">
         <div class="container">
             <div class="row">
+                <!-- Sidebar Navigation -->
                 <div class="col-md-3">
                     <nav id="navi">
                         <ul>
                             <li><a href="#overview">개요</a></li>
+                            <li><a href="#methodology">연구방법</a></li>
                             <li><a href="#data-collection">데이터 수집</a></li>
                             <li><a href="#analysis">분석</a></li>
-                            <li><a href="#implications">제언</a></li>
                             <li><a href="#conclusion">결론</a></li>
                         </ul>
                     </nav>
                 </div>
+
+                <!-- Content Area -->
                 <div class="col-md-9">
+                    <!-- Overview Section -->
                     <div id="overview" class="page one">
-                        <h2 class="heading">연구 개요</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
+                        <h2 class="heading" data-aos="fade-up">연구 개요</h2>
+                        <div class="resume-wrap d-flex">
                             <div class="text pl-3">
-                                <!-- 논문 서론 내용 -->
-                                <p>본 연구는 한국 온라인 커뮤니티에서 반페미니즘 반동과 극우 이데올로기가 결합된 '이퀄리즘' 담론을 탐구합니다. 2016년 나무위키에서 한 사용자의 조작으로 시작된 '이퀄리즘'은 학문적 근거나 구체적인 증거 없이 만들어진 개념이었습니다.</p>
-                                <p>이퀄리즘의 초기 정의는 "페미니즘의 역차별 논란으로 인해, 모든 인간이 평등하다는 기반 하에 도입되었다. 페미니즘보다 역차별에서 자유롭다"였습니다. 이 개념은 허위 자막이 포함된 영상이나 거짓 인용 등 조작된 설명들이 추가되면서 확장되었고, 한국의 여러 온라인 커뮤니티로 퍼져나가 페미니즘 운동에 대한 반대를 정당화하는 데 사용되었습니다.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="data-collection" class="page two">
-                        <h2 class="heading">데이터 수집</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="text pl-3">
-                                <!-- 데이터 수집 방법론 설명 -->
-                                <p>본 연구는 2017년부터 2023년까지의 DC인사이드 게시물과 댓글을 분석 대상으로 삼았습니다. '이퀄리즘', '이퀼리즘', '이퀄', '이퀼', '이퀄리스트', '이퀼리스트' 등의 키워드를 포함한 총 2,339개의 게시물과 8,576개의 댓글을 수집했습니다.</p>
+                                <p data-aos="fade-up">본 연구는 한국 온라인 커뮤니티에서 반페미니즘 반동과 극우 이데올로기가 결합된 '이퀄리즘' 담론을 탐구합니다.</p>
                                 
-                                <!-- 데이터 시각화를 위한 캔버스 -->
-                                <div class="chart-container">
-                                    <canvas id="dataCollectionChart"></canvas>
-                                </div>
+                                <!-- Figure 1: 연구 프레임워크
+								<div class="figure-container" data-aos="fade-up">
+									<h4>Figure 1: 연구 프레임워크</h4>
+									<canvas id="researchFramework" width="400" height="300"></canvas>
+									<p class="figure-caption">연구의 전체적인 프레임워크와 주요 분석 요소</p>
+								</div> -->
                             </div>
                         </div>
                     </div>
 
-                    <div id="analysis" class="page three">
-                        <h2 class="heading">분석</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="text pl-3">
-                                <!-- 분석 결과 -->
-                                <p>구조적 토픽 모델링(STM) 분석 결과, 9개의 주요 토픽이 도출되었습니다:</p>
+                    <!-- Methodology Section -->
+                    <div id="methodology" class="page two">
+                        <h2 class="heading" data-aos="fade-up">연구방법</h2>
+                        <div class="resume-wrap d-flex">
+                            <div class="ext pl-3">
+                                <p data-aos="fade-up">본 연구는 혼합 연구방법론을 채택하여 양적, 질적 분석을 수행했습니다.</p>
                                 
-                                <!-- 토픽 모델링 결과를 위한 차트 -->
-                                <div class="chart-container">
-                                    <canvas id="topicModelingChart"></canvas>
-                                </div>
-                                
-                                <div class="topic-list mt-4">
-                                    <h4>주요 토픽</h4>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="progress-wrap ftco-animate">
-                                                <h3>토픽 1: 나무위키 관련</h3>
-                                                <div class="progress">
-                                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                                        <span>90%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 다른 토픽들도 같은 구조로 추가 -->
-                                    </div>
-                                </div>
+								<div class="table-container" data-aos="fade-up">
+									<h4 class="mb-4">Table 1: Topics by STM (Structural Topic Model)</h4>
+									<div class="table-responsive">
+									  <table class="table table-bordered table-hover">
+										<thead class="thead-light">
+										  <tr>
+											<th style="width: 15%">Topics</th>
+											<th>Words</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>Topic 1</td>
+											<td>모르다, 나오다, 나무위키, 그리고, 인터넷, 만나다, 터지다, 좋아하다, 대가리, 사이트</td>
+										  </tr>
+										  <tr>
+											<td>Topic 2</td>
+											<td>이퀄리즘, 역겹다, 그래서, 웃무위키, 어떻다, 뒤지다, 우기다, 탈갤해라, 거르다, 들리다</td>
+										  </tr>
+										  <tr>
+											<td>Topic 3</td>
+											<td>페미니즘, 아니다, 우월주의, 반페미, 양성평등, 다르다, 여성주의, 래디컬, 나오다, 생기다</td>
+										  </tr>
+										  <tr>
+											<td>Topic 4</td>
+											<td>성평등, 만들다, 만드다, 비리다, 꺼지다, 어찌다, 피싸개, 바꾸다, 미치다, 개소리</td>
+										  </tr>
+										  <tr>
+											<td>Topic 5</td>
+											<td>보이다, 아니다, 몰리다, 이렇다, 민주당, 문재인, 그리고, 그래도, 나오다, 저렇대</td>
+										  </tr>
+										  <tr>
+											<td>Topic 6</td>
+											<td>대하다, 만들다, 이미지, 새롭다, 아니다, 강하다, 위하다, 비리다, 인터뷰, 드리다</td>
+										  </tr>
+										  <tr>
+											<td>Topic 7</td>
+											<td>페미니스트, 워마드, 트위터, 좆같다, 똑같다, 이러다, 손가락, 두껍다, 끌페미, 트페미</td>
+										  </tr>
+										  <tr>
+											<td>Topic 8</td>
+											<td>이퀄리스트, 위하다, 그러다, 나쁘다, 당하다, 웃기다, 다니다, 평등주의, 피해자, 래디컬</td>
+										  </tr>
+										  <tr>
+											<td>Topic 9</td>
+											<td>그렇다, 대하다, 아니다, 가지다, 못하다, 이야기, 느끼다, 위하다, 그래서, 나가다</td>
+										  </tr>
+										</tbody>
+									  </table>
+									</div>
+									<p class="text-muted mt-2"><small>* STM(Structural Topic Model)을 통해 추출된 주요 토픽과 관련 단어들</small></p>
+								</div>
                             </div>
                         </div>
                     </div>
 
-                    <div id="implications" class="page four">
-                        <h2 class="heading">제언</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
+                    <!-- Data Collection Section -->
+                    <div id="data-collection" class="page three">
+                        <h2 class="heading" data-aos="fade-up">데이터 수집</h2>
+                        <div class="resume-wrap d-flex">
                             <div class="text pl-3">
-                                <!-- 제언 내용 -->
-                                <p>본 연구의 한계점과 향후 연구 방향은 다음과 같습니다:</p>
-                                <ul>
-                                    <li>2016년 초기 데이터 부재로 인한 분석의 한계</li>
-                                    <li>익명 사용자로 인한 사용자 추적의 어려움</li>
-                                    <li>토픽 2와 토픽 5의 역상관관계에 대한 추가 연구 필요</li>
-                                </ul>
+                                <p data-aos="fade-up">2017년부터 2023년까지의 DC인사이드 게시물과 댓글을 분석했습니다.</p>
+                                
+								<!-- Figure 1: 주제 분포 -->
+								<div class="chart-container">
+									<h4 class="mb-4">Figure 1: Distribution of Topics</h4>
+									<div id="topicChart" style="height: 400px;"></div>
+								  </div>
+                                <!-- 연도별 게시물 수 차트 -->
+								<div class="chart-wrapper" data-aos="fade-up">
+									<h4 class="mb-4">Figure 2: 연도별 게시물 수 추이</h4>
+									<div id="postsChart" style="height: 400px;"></div>
+									<p class="figure-caption">2017-2023년 게시물 수 변화 추이</p>
+								</div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Analysis Section -->
+                    <div id="analysis" class="page four">
+                        <h2 class="heading" data-aos="fade-up">분석</h2>
+                        <div class="resume-wrap d-flex">
+                            <div class="text pl-3">
+                                <p data-aos="fade-up">구조적 토픽 모델링(STM) 분석 결과입니다.</p>
+                                
+                                <!-- 토픽 비율 시계열 차트 -->
+								<div class="chart-wrapper" data-aos="fade-up">
+									<h4 class="mb-4">Figure 3: 토픽 비율의 시계열 변화</h4>
+									<div id="proportionsChart" style="height: 400px;"></div>
+									<p class="figure-caption">각 토픽 비율의 시간에 따른 변화</p>
+								</div>
+
+								 <!-- 토픽 빈도 시계열 차트 -->
+								 <div class="chart-wrapper" data-aos="fade-up">
+									<h4 class="mb-4">Figure 4: 토픽 빈도의 시계열 변화</h4>
+									<div id="frequenciesChart" style="height: 400px;"></div>
+									<p class="figure-caption">각 토픽 출현 빈도의 시간에 따른 변화</p>
+								</div>
+
+								<!-- Topic 2와 5의 비교 차트 -->
+								<div class="chart-wrapper" data-aos="fade-up">
+									<h4 class="mb-4">Figure 5: Topic 2와 Topic 5의 연도별 비교</h4>
+									<div id="comparisonChart" style="height: 400px;"></div>
+									<p class="figure-caption">주요 대립 토픽의 시간에 따른 변화 비교</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusion Section -->
                     <div id="conclusion" class="page five">
-                        <h2 class="heading">결론</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
+                        <h2 class="heading" data-aos="fade-up">결론</h2>
+                        <div class="resume-wrap d-flex">
                             <div class="text pl-3">
-                                <!-- 결론 내용 -->
-                                <p>2017년부터 2023년까지의 DC인사이드 게시물 분석 결과, 이퀄리즘의 출처에 대한 의심과 검증은 감소했지만, 이퀄리즘이 만들어낸 반페미니즘 레토릭은 안정적으로 유지되었습니다. 또한 보수주의 관련 토픽이 시간이 지남에 따라 증가하는 것으로 나타났습니다.</p>
+                                <p data-aos="fade-up">이퀄리즘 담론의 변화와 그 함의를 정리했습니다.</p>
+                                
+                                <!-- Figure 6: 결론 다이어그램 -->
+                                <div class="figure-container" data-aos="fade-up">
+                                    <h4>Figure 6: 결론 다이어그램</h4>
+                                    <div class="chart-container" id="conclusionDiagram">
+                                        <!-- 차트는 JS에서 생성 -->
+                                    </div>
+                                    <p class="figure-caption">연구 결과의 종합적 도식화</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,60 +237,7 @@
         </div>
     </section>
 
-    <script>
-        // 데이터 수집 차트
-        const dataCollectionCtx = document.getElementById('dataCollectionChart').getContext('2d');
-        new Chart(dataCollectionCtx, {
-            type: 'bar',
-            data: {
-                labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-                datasets: [{
-                    label: '게시물 수',
-                    data: [300, 450, 320, 280, 600, 400, 350],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        // 토픽 모델링 차트
-        const topicModelingCtx = document.getElementById('topicModelingChart').getContext('2d');
-        new Chart(topicModelingCtx, {
-            type: 'radar',
-            data: {
-                labels: ['토픽1', '토픽2', '토픽3', '토픽4', '토픽5', '토픽6', '토픽7', '토픽8'],
-                datasets: [{
-                    label: '토픽 분포',
-                    data: [65, 59, 90, 81, 56, 55, 40, 70],
-                    fill: true,
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    pointBackgroundColor: 'rgb(255, 99, 132)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(255, 99, 132)'
-                }]
-            },
-            options: {
-                elements: {
-                    line: {
-                        borderWidth: 3
-                    }
-                }
-            }
-        });
-    </script>
-
-    <!-- 필수 JS 파일들 -->
+    <!-- Core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -215,6 +250,9 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
 </body>
 </html>
