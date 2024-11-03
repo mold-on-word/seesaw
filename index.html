@@ -370,6 +370,139 @@
 
 	</section>
 
+	<!-- Data Preprocessing Section -->
+	<section id="data-preprocessing" class="mb-5">
+		<h2 class="heading mb-4" data-aos="fade-up">데이터 전처리</h2>
+		<div class="card border-0 shadow-sm">
+			<div class="card-body">
+				<p data-aos="fade-up">이후, 본문과 무관한 댓글을 다는 문화가 존재하는 디시인사이드의 특성을 고려하여, 본문과 댓글을 모두 하나의 독립된 도큐먼트로 취급하였다. 디시인사이드의 댓글은 인터넷 신문기사 등과 달리, 원문과 관련 없는 내용이 많고, 길이와 내용 측면에서 게시물과 유사한 특징을 보이기 때문이다.</p>
+				<p data-aos="fade-up">텍스트 분석을 위해 토크나이징을 하기 위해 다양한 토크나이저를 활용해 보았으며, 그 중 한국어 온라인 게시글 텍스트 분석에 유용한 Kiwi 토크나이저를 활용하였다. ‘이퀄리즘', ‘이퀄리스트’,‘페미' 등의 신조어가 하나의 토큰으로 정의되어 있지 않아 사용자 사전으로 유관 신조어들을 추가하여 각각 개별 토큰으로 포착하였고, ‘패미'나 ‘페미' 등을 같은 토큰으로 처리하도록 하였다. 토크나이징 후, 불용어들은 모두 수작업으로 처리하여 제거하였다.</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Topic Modeling Analysis Section -->
+	<section id="topic-modeling" class="mb-5">
+		<h2 class="heading mb-4" data-aos="fade-up">토픽 모델링 분석</h2>
+		<div class="card border-0 shadow-sm">
+			<div class="card-body">
+				<p data-aos="fade-up">데이터를 수집 및 정제한 후에는, ‘이퀄리즘'이라는 개념의 실 용례 변화를 분석하기 위해 구조적 토픽 모델링(Structural Topic Modeling)을 실시하였습니다. 각 토픽은 다음과 같습니다.</p>
+				
+				<!-- Topic Word Clouds -->
+				<div class="row">
+					<!-- Topic 1 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 1: 나무위키와 인터넷 커뮤니티에 대한 이야기</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">모르다</span>, <span style="font-size: 1.8em;">나오다</span>, <span style="font-size: 1.6em;">나무위키</span>, <span>그리고</span>, <span>인터넷</span>, <span>만나다</span>, <span>터지다</span>, <span>좋아하다</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 2 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 2: 이퀄리즘에 대한 논쟁과 비판</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">이퀄리즘</span>, <span style="font-size: 1.5em;">역겹다</span>, <span>그래서</span>, <span>어떻다</span>, <span>뒤지다</span>, <span>우기다</span>, <span>탈갤해라</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 3 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 3: 페미니즘과 반페미니즘의 시각 차이</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">페미니즘</span>, <span style="font-size: 1.8em;">아니다</span>, <span>우월주의</span>, <span>반페미</span>, <span>양성평등</span>, <span>다르다</span>, <span>여성주의</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 4 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 4: 성평등 사회를 향한 변화와 노력</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">성평등</span>, <span style="font-size: 1.8em;">만들다</span>, <span>버리다</span>, <span>꺼지다</span>, <span>어쩌다</span>, <span>바꾸다</span>, <span>미치다</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 5 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 5: 정치와 페미니즘: 민주당의 입장</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">보이다</span>, <span style="font-size: 1.8em;">아니다</span>, <span>올리다</span>, <span>이렇다</span>, <span>민주당</span>, <span>문재인</span>, <span>그리고</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 6 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 6: 새로운 이미지와 캐릭터 창조</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">대하다</span>, <span style="font-size: 1.8em;">만들다</span>, <span>이미지</span>, <span>새롭다</span>, <span>아니다</span>, <span>강하다</span>, <span>위하다</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 7 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 7: 페미니스트와 온라인 커뮤니티의 갈등</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">페미니스트</span>, <span style="font-size: 1.5em;">워마드</span>, <span>트위터</span>, <span>똑같다</span>, <span>이러다</span>, <span>손가락</span>, <span>두껍다</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 8 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 8: 이퀄리스트와 평등주의의 이해</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">이퀄리스트</span>, <span style="font-size: 1.5em;">위하다</span>, <span>그러다</span>, <span>나쁘다</span>, <span>당하다</span>, <span>웃기다</span>, <span>다니다</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Topic 9 -->
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<h5 class="card-title">Topic 9: 개인의 생각과 사회적 현상에 대한 고찰</h5>
+								<div class="word-cloud" style="font-size: 0.8em;">
+									<span style="font-size: 2em;">그렇다</span>, <span style="font-size: 1.8em;">대하다</span>, <span>아니다</span>, <span>가지다</span>, <span>못하다</span>, <span>이야기</span>, <span>느끼다</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="figure-caption mt-3">토픽 별 주요 단어를 강조하여 시각화하였습니다. 각 토픽은 해당 주제를 가장 잘 드러내는 단어들로 구성되어 있습니다.</p>
+			</div>
+		</div>
+	</section>
 
 	
     <!-- Methodology Section -->
@@ -380,152 +513,7 @@
               <p data-aos="fade-up">본 연구는 혼합 연구방법론을 채택하여 양적, 질적 분석을 수행했습니다.</p>
           <div class="table-container" data-aos="fade-up">
         <h4 class="mb-4">Topics by STM (Structural Topic Model)</h4>
-        <div class="row">
-          <!-- Topic Cards -->
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 1</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-primary mr-2">나무위키</span>
-              <span class="badge badge-info mr-2">인터넷</span>
-              <span class="badge badge-secondary">사이트</span>
-            </div>
-            <p class="card-text">
-              <small>모르다, 나오다, 나무위키, 그리고, 인터넷, 만나다, 터지다, 좋아하다, 대가리, 사이트</small>
-            </p>
-            </div>
-          </div>
-          </div>
         
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 2</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-danger mr-2">이퀄리즘</span>
-              <span class="badge badge-warning mr-2">역겹다</span>
-              <span class="badge badge-info">우기다</span>
-            </div>
-            <p class="card-text">
-              <small>이퀄리즘, 역겹다, 그래서, 웃무위키, 어떻다, 뒤지다, 우기다, 탈갤해라, 거르다, 들리다</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 3</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-primary mr-2">페미니즘</span>
-              <span class="badge badge-success mr-2">양성평등</span>
-              <span class="badge badge-warning">우월주의</span>
-            </div>
-            <p class="card-text">
-              <small>페미니즘, 아니다, 우월주의, 반페미, 양성평등, 다르다, 여성주의, 래디컬, 나오다, 생기다</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 4</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-success mr-2">성평등</span>
-              <span class="badge badge-secondary mr-2">만들다</span>
-              <span class="badge badge-danger">바꾸다</span>
-            </div>
-            <p class="card-text">
-              <small>성평등, 만들다, 만드다, 버리다, 꺼지다, 어쩌다, 피싸개, 바꾸다, 미치다, 개소리</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 5</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-primary mr-2">민주당</span>
-              <span class="badge badge-info mr-2">문재인</span>
-              <span class="badge badge-secondary">정치</span>
-            </div>
-            <p class="card-text">
-              <small>보이다, 아니다, 올리다, 이렇다, 민주당, 문재인, 그리고, 그래도, 나오다, 저렇다</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 6</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-success mr-2">이미지</span>
-              <span class="badge badge-warning mr-2">인터뷰</span>
-              <span class="badge badge-info">새롭다</span>
-            </div>
-            <p class="card-text">
-              <small>대하다, 만들다, 이미지, 새롭다, 아니다, 강하다, 위하다, 버리다, 인터뷰, 드리다</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 7</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-danger mr-2">페미니스트</span>
-              <span class="badge badge-warning mr-2">워마드</span>
-              <span class="badge badge-info">트위터</span>
-            </div>
-            <p class="card-text">
-              <small>페미니스트, 워마드, 트위터, 좆같다, 똑같다, 이러다, 손가락, 두껍다, 꼴페미, 트페미</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 8</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-primary mr-2">이퀄리스트</span>
-              <span class="badge badge-success mr-2">평등주의</span>
-              <span class="badge badge-warning">래디컬</span>
-            </div>
-            <p class="card-text">
-              <small>이퀄리스트, 위하다, 그러다, 나쁘다, 당하다, 웃기다, 다니다, 평등주의, 피해자, 래디컬</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        
-          <div class="col-md-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Topic 9</h5>
-            <div class="d-flex align-items-center mb-3">
-              <span class="badge badge-secondary mr-2">일반</span>
-              <span class="badge badge-info mr-2">이야기</span>
-              <span class="badge badge-primary">대화</span>
-            </div>
-            <p class="card-text">
-              <small>그렇다, 대하다, 아니다, 가지다, 못하다, 이야기, 느끼다, 위하다, 그래서, 나가다</small>
-            </p>
-            </div>
-          </div>
-          </div>
-        </div>
         <p class="text-muted mt-2"><small>* STM(Structural Topic Model)을 통해 추출된 주요 토픽과 관련 단어들</small></p>
         </div>
                   </div>
@@ -539,10 +527,7 @@
           <div class="card-body">
               <p data-aos="fade-up">2017년부터 2023년까지의 DC인사이드 게시물과 댓글을 분석했습니다.</p>
               
-              <div class="chart-wrapper mb-5" data-aos="fade-up">
-                  <h4 class="mb-4">Figure 1: Distribution of Topics</h4>
-                  <div id="topicChart" style="height: 400px;"></div>
-              </div>
+              
 
               <div class="chart-wrapper" data-aos="fade-up">
                   <h4 class="mb-4">Figure 2: 연도별 게시물 수 추이</h4>
@@ -552,6 +537,9 @@
           </div>
       </div>
     </section>
+
+
+
 
     <!-- Analysis Section -->
     <section id="analysis" class="mb-5">
