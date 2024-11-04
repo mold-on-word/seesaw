@@ -5,589 +5,230 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- Donut Chart -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    
-    <!-- Core CSS -->
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Chart.js -->
+    <!-- Chart.js 추가 -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Donut Chart -->
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+
 </head>
-
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">이퀄리즘 연구</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
-            <span class="oi oi-menu"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
-                <li class="nav-item"><a href="#overview" class="nav-link"><span>개요</span></a></li>
-                <li class="nav-item"><a href="#methodology" class="nav-link"><span>연구방법</span></a></li>
-                <li class="nav-item"><a href="#data-collection" class="nav-link"><span>데이터 수집</span></a></li>
-                <li class="nav-item"><a href="#analysis" class="nav-link"><span>분석</span></a></li>
-                <li class="nav-item"><a href="#conclusion" class="nav-link"><span>결론</span></a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Equalism?</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#overview" class="nav-link"><span>개요</span></a></li>
+                    <li class="nav-item"><a href="#data-collection" class="nav-link"><span>데이터 수집</span></a></li>
+                    <li class="nav-item"><a href="#analysis" class="nav-link"><span>분석</span></a></li>
+                    <li class="nav-item"><a href="#implications" class="nav-link"><span>제언</span></a></li>
+                    <li class="nav-item"><a href="#conclusion" class="nav-link"><span>결론</span></a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="hero-wrap js-fullheight" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-lg-10 mx-auto text-center">
-                <h1 class="display-3 mb-4 text-dark" style="font-weight: 700;" data-aos="fade-up">
-                    페미니즘과 이퀄리즘
-                </h1>
-                <h2 class="h3 mb-5 text-dark" style="font-weight: 500;" data-aos="fade-up" data-aos-delay="100">
-                    한국 온라인 여성혐오의 블랙박스를 열다
-                </h2>
-                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="200">
-                    <span class="text-muted">스크롤하여 계속 읽기</span>
-                    <div class="mt-3">
-                        <i class="ion-ios-arrow-down h1 animated bounce text-dark"></i>
+    </nav>
+
+    <section class="hero-wrap js-fullheight">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+                    <div class="text text-center">
+                        <h1>페미니즘과 이퀄리즘</h1>
+                        <h2>한국 온라인 여성혐오의 블랙박스를 열다</h2>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Epigraph Section -->
-  <section class="epigraph-section js-fullheight d-flex align-items-center" style="background: #fff;">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <blockquote class="epic-quote text-center" data-aos="fade-up">
-                    <p class="display-4 mb-4" style="font-weight: 300; line-height: 1.6;">
-                        한국 온라인 커뮤니티에서 '이퀄리즘'이란 단어가 만들어진 지 벌써 십 년 가까이 되었다.
-                    </p>
-                    <!-- <p class="display-4" style="font-weight: 300; line-height: 1.6;">
-                        그리고 그 허구적 개념은 이제 우리 사회의 현실이 되어버렸다.
-                    </p> -->
-                </blockquote>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <div class="container">
-    
-	<!-- Timeline Section의 수정된 버전 -->
-<div class="timeline-container">
-    <div class="timeline-track"></div>
-    
-    <!-- 2016년 2월 -->
-    <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
-            <div class="timeline-date">2016년 2월 8일</div>
-            <div class="timeline-card">
-                <h3 class="h4 mb-3">이퀄리즘의 시작</h3>
-                <p>나무위키에 '이퀄리즘' 항목이 처음 생성. '페미니즘은 서구 주류 지성 사회에서는 이미 도태된 것이며 이퀄리즘이야말로 진정한 성평등주의이다'라는 주장과 함께 조작된 근거들이 나열되기 시작했다.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 2016년 8월 -->
-    <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-content">
-            <div class="timeline-date">2016년 8월 20일</div>
-            <div class="timeline-card">
-                <h3 class="h4 mb-3">최초의 의문 제기</h3>
-                <blockquote class="blockquote-sm">
-                    <p>"이퀄리즘이라는 개념이 실제로 존재하는가?"</p>
-                </blockquote>
-                <p>한 나무위키 사용자가 개념의 실존 여부에 의문을 제기하며 5개월간의 논쟁이 시작되었다.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 2017년 1월 -->
-    <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
-            <div class="timeline-date">2017년 1월 말</div>
-            <div class="timeline-card">
-                <h3 class="h4 mb-3">진실의 순간</h3>
-                <p>대형 언론사들이 '이퀄리즘'의 허구성을 보도하기 시작. 나무위키는 해당 문서를 '나무위키 성 평등주의 날조 사건'으로 수정하며 한 시대가 마무리되었다.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 2024년 1월 -->
-    <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-content">
-            <div class="timeline-date">2024년 1월</div>
-            <div class="timeline-card">
-                <h3 class="h4 mb-3">"사상검증구역: 더 커뮤니티" 방영</h3>
-                <p>허구성이 폭로된 지 7년이 지났음에도, 이퀄리즘은 페미니즘의 대척점으로 TV 프로그램에서 다뤄졌다. 방송국은 '사회적 통용'을 근거로 들었으나, 이는 새로운 논란을 불러일으켰다.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Research Motivation Section (신규 추가) -->
-<section class="research-motivation py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="h4 mb-4 text-center">연구의 동기</h3>
-                        <p class="lead">허위성이 입증된 개념이 어떻게 7년이 지난 후에도 사회적으로 영향력을 발휘할 수 있는가?</p>
-                        <div class="key-points mt-4">
-                            <div class="point-item mb-3">
-                                <h5>팩트 중심주의와의 모순</h5>
-                                <p>'팩트'를 중시하는 한국 온라인 커뮤니티에서 이례적으로 나타난 현상</p>
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav id="navi">
+                        <ul>
+                            <li><a href="#overview">개요</a></li>
+                            <li><a href="#data-collection">데이터 수집 및 전처리</a></li>
+                            <li><a href="#analysis">데이터 분석</a></li>
+                            <li><a href="#implications">제언</a></li>
+                            <li><a href="#conclusion">결론</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div id="overview" class="page one">
+                        <h2 class="heading">개요</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="text pl-3">
+                                <!-- 논문 서론 내용 -->
+                                <p>한국 온라인 커뮤니티에서 ‘이퀄리즘’이란 단어가 만들어진 지 벌써 십 년 가까이 되었다. 2016년부터 온라인에서 알음알음 퍼지다가 처음 한국어 위키 사이트인 ‘나무위키’에 한 유저가 ‘이퀄리즘equalism’ 문서를 작성하며, 이 개념은 사상적 기반이 탄탄한 정치사조처럼 부풀려지기 시작했다. 한 개인이 만들어 낸 나무위키 페이지는 급류를 타며 살이 붙기 시작했고, 해당 위키 페이지의 본문은 가짜 자막이 달린 강연 캡쳐 이미지들로 이퀄리즘의 이론적 정당성과 지지기반을 설파하고 있었다. 조작된 증거들을 포함하는 여러 갑론을박과 함께 ‘이퀄리즘’이란 사상은 한국 온라인 커뮤니티에서 점차 뿌리를 내리고 있었다. 그러나 2017년 1월 말부터, 기존 대형 언론사들이 ‘이퀄리즘’이란 것은 그럴듯하게 치장된, 학문적 기반과 근거 없이 만들어진 “창작품”이라는 기사들을 보도하기 시작한다. 한국 나무위키 유저들은 혼란스러워 했으나, 이내 그들은 ‘팩트’를 받아들이고, ‘이퀄리즘’이란 문서를 삭제하며 그 기록을 ‘ 나무위키 성 평등주의 날조 사건’으로 수정하여 등록하였다. 그렇게 이퀄리즘에 대한 온라인 상에서의 설전은 하나의 해프닝으로 마무리되었다. </p>
+                                <p>그러나 우리의 이야기는 여기서 시작한다. 이퀄리즘의 허구성이 폭로된 지 7년이 지난 2024년 1월 말, 한 케이블 방송사에서 “사상검증구역: 더 커뮤니티”라는 서바이벌 방송을 방영하였다. 이 방송은 한국 사회에서 논쟁의 핵심이 되는 네 개의 주제를 정하고, 이 주제별로 대비되는 사람들을 모아 협력과 갈등을 통해 살아남게 하는 프로그램이었다. 그 네 개의 주제는 정치적 진보/보수, 경제적 서민/부유 계급, 타 문화에 대한 개방/전통, 그리고 ‘페미(니즘)’와 ‘이퀄(리즘)’이었다. 이론적 그리고 역사적으로 지지기반을 탄탄히 한 페미니즘과 이퀄리즘 자체를 대비되는 사상으로 놓았다는 것 자체를 문제시하는 이들도 많았으나, 방송국에서는 ‘이퀄리즘’의 정당성을 인정하는 것이 아니라 사회적으로 통용되기에 사용했다고 말하며 방송을 진행했다. 그리고 이퀄리즘에 대한 비판과 무관하게, 이 방송은 대중에게 쉽게 이해되고, 수익적으로도 괜찮은 성과를 보였다.</p>
+                                <p>우리가 주목한 것은 ‘이퀄리즘’의 허위성이 폭로된 후에도, 대중들이 너무나 쉽게 이를 받아들이고, 이해하고 있다는 것이었다. 이념이나 사상 자체의 허위성과 진실성을 구분하기는 어렵겠으나, 그 지지기반의 사실관계를 판단하는 것은 비교적 쉬운데, 이퀄리즘에 대한 근거들이 “날조”였음이 명확해진 후에도, 대중들은 이 단어를, 사상을, 이념을 하나의 성립된 개념으로써, 페미니즘에 대한 반대항으로써 쉽게 이해하고 있었다. 이 현상이 ‘팩트'를 중시하는 한국 온라인 커뮤니티 성향을 고려하면 매우 이례적이면서도 의미심장하다고 생각하여 우리는 이 단어의 변천과 용례를 분석하여 이퀄리즘에 숨은 의미를 펼쳐보고자 하였다. </p>
                             </div>
-                            <div class="point-item mb-3">
-                                <h5>개념의 생명력</h5>
-                                <p>허구임이 밝혀진 개념이 어떻게 사회적으로 수용되고 재생산되는가?</p>
+                        </div>
+                    </div>
+
+                    <div id="data-collection" class="page two">
+                        <h2 class="heading">데이터 수집 및 전처리</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="text pl-3">
+                                <!-- 데이터 수집 방법론 설명 -->
+                                <p>우리가 이 탐사의 필요성을 느끼고 처음 조사한 것은 이퀄리즘의 고향, 나무위키였다. 과거 ‘이퀄리즘' 문서의 역사(위키 페이지들은 유저가 문서를 변경할 때마다 매 버전을 저장하고, ‘역사' 항목을 통해 과거 버전을 볼 수 있게 한다)를 살펴보며 조사를 시작했다. 2016년 2월 8일, 나무위키에 ‘이퀄리즘’ 항목이 처음 생성되었으며, 2017년 1월까지 내용이 추가되어 왔다. 주로 ‘페미니즘은 서구 주류 지성 사회에서는 이미 도태된 것이며 이퀄리즘이야말로 진정한 성평등주의이다'라는 식의 서술이 주를 이뤘고, 이를 지지하는 조작 근거들이 나열되는 식이었다.</p>
+                                <p>2016년 8월 20일, 한 나무위키 사용자가 이 개념의 실제 존재 여부에 의문을 제기하였고, 이퀄리즘이 조작된 개념인지 여부에 대한 논쟁이 약 5개월간 이어졌고, 대형 언론사의 보도 이후 2017년 1월 29일, 나무위키는 이 항목을 ‘이퀄리즘 조작 사건’으로 수정했다. </p>
+                                <p>이후 우리는 이퀄리즘이 온라인에서 실제로 사용되는 양상을 확인하기 위해, 텍스트 데이터를 직접 수집하여 들여다 보기로 했다. 데이터를 수집할 곳은 국내 이용자가 가장 많은 온라인 커뮤니티 사이트 ‘디시인사이드(DCinside)’로 정했으며, 하위 갤러리 구분 없이 갤러리 전체 검색을 통해 ‘이퀄리즘'과 관련된 단어를 사용한 모든 갤러리의 글들을 모았다. 수집을 위해 검색에 활용한 키워드는 ‘이퀄리즘’, ‘이퀼리즘’, ‘이퀄’, ‘이퀼’, ‘이퀄리스트’, ‘이퀼리스트’로, ‘이퀄'과 ‘이퀼' 등 오타처럼 혼용될 수 있는 검색어까지 모두 확인하였다. 데이터 고도화를 위해 ‘이어폰, 헤드폰 갤러리’ 등지에서 오디오 설정을 위해 사용되는 ‘“이퀄”라이저' 같은 용어가 포함된 경우는 모두 검수하여 삭제하였다. 이 작업을 통해 총 2,339개의 게시물과 8,576개의 댓글을 모았고, 제목, 작성자, 날짜, 본문 내용, 추천 수, 댓글 수(게시물의 경우), 조회 수 등의 메타데이터를 함께 저장하였다.</p>
+                                <!-- 연도별 게시물 수 차트 -->
+								<div class="chart-wrapper" data-aos="fade-up">
+									<div id="postsChart" style="height: 400px;"></div>
+									<p class="figure-caption">2017-2023년 게시물 수 변화 추이</p>
+								</div>
+                                <p>이후, 본문과 무관한 댓글을 다는 문화가 존재하는 디시인사이드의 특성을 고려하여, 본문과 댓글을 모두 하나의 독립된 도큐먼트로 취급하였다. 디시인사이드의 댓글은 인터넷 신문기사 등과 달리, 원문과 관련 없는 내용이 많고,길이와 내용 측면에서 게시물과 유사한 특징을 보이기 때문이다.</p>
+                                <!-- 연도별 게시물 수 차트 -->
+                                <div class="chart-wrapper" data-aos="fade-up">
+                                    <div id="postsRepliesChart" style="height: 400px;"></div>
+                                    <p class="figure-caption">2017-2023년 게시물 및 댓글 수 변화 추이</p>
+                                </div>
+                                <p>이후 우리는 수집한 데이터를 분석하기 위해 전처리를 해야 했다. 텍스트 분석을 위해 토크나이징을 하기 위해 다양한 토크나이저를 활용해 보았으며, 그 중 한국어 온라인 게시글 텍스트 분석에 유용한 Kiwi 토크나이저를 활용하였다. ‘이퀄리즘', ‘이퀄리스트’,‘페미' 등의 신조어가 하나의 토큰으로 정의되어 있지 않아 사용자 사전으로 유관 신조어들을 추가하여 각각 개별 토큰으로 포착하였고, ‘패미'나 ‘페미' 등을 같은 토큰으로 처리하도록 하였다. 토크나이징 후, 불용어들은 모두 수작업으로 처리하여 제거하였다.  </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="analysis" class="page three">
+                        <h2 class="heading">데이터 분석</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="text pl-3">
+                                <!-- 분석 결과 -->
+                                <p>데이터를 수집 및 정제한 후에는, ‘이퀄리즘'이라는 개념의 실 용례 변화를 분석하기 위해 구조적 토픽 모델링(Structural Topic Modeling)을 실시하였다. 디시인사이드 데이터에 토픽 모델링을 수행하여 총 9개의 토픽으로 정리하였고, 그 핵심 단어들은 다음과 같다.</p>
+                                
+                                <!-- 토픽 모델링 테이블 -->
+                                <!-- Topic 1104 Chart Section -->
+                                <div class="chart-wrapper" data-aos="fade-up">
+                                    <h4 class="mb-4">주요 토픽 분석</h4>
+                                    <table class="table table-bordered" style="width: 100%; max-width: 800px; margin: 0 auto;">
+                                        <thead>
+                                        <tr>
+                                            <th>토픽 번호</th>
+                                            <th>토픽 제목</th>
+                                            <th>주요 키워드</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>나무위키와 인터넷 커뮤니티에 대한 경험</td>
+                                                <td>나무위키, 인터넷, 만나다, 좋아하다, 갤러리</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>이퀄리즘에 대한 의심과 비판</td>
+                                                <td>이퀄리즘, 역겹다, 좆무위키, 틀리다, 거르다</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>안티 페미니즘 기반 혐오 발언</td>
+                                                <td>페미니즘, 아니다, 반페미, 양성평등, 우월주의</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>여성에 대한 혐오와 증오</td>
+                                                <td>성평등, 여가부, 피싸개, 싫어하다, 죽이다</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>정치적 우파성향 토픽</td>
+                                                <td>아니다, 민주당, 안티페미, 이준석, 문재인</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>더미 토픽 1</td>
+                                                <td>대하다, 만들다, 이미지, 위하다</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>특정 커뮤니티의 페미니즘에 대한 반감</td>
+                                                <td>페미니스트, 워마드, 트위터, 좆같다, 꼴페미</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>이퀄리즘에 대한 지지적 설명</td>
+                                                <td>이퀄리스트, 위하다, 평등주의, 휴머니즘</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>더미 토픽 2</td>
+                                                <td>그렇다, 대하다, 가지다, 느끼다</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="figure-caption">STM 토픽 모델링</p>
+                                </div>
+                                <p>더미 토픽으로는 토픽 6과 9가 있었으며, 이후 통계량 분석에서는 해당 토픽들은 제외하였다.</p>
+                                <p>토픽 별 빈도와 비율은 아래와 같았으며, 이 중 3번 토픽같은 백래쉬 토픽이 꾸준히 상위를 점유하는 것을 보였다.</p>
+                                <!-- 주제 분포 Figure -->
+								<div class="chart-container">
+									<div id="topicChart" style="height: 400px;"></div>
+									<p class="figure-caption">토픽별 빈도 및 비율</p>
+								  </div>
+                                
+                                <!-- 토픽 비율 시계열 차트 -->
+								<div class="chart-wrapper" data-aos="fade-up">
+									<div id="proportionsChart" style="height: 400px;"></div>
+									<p class="figure-caption">각 토픽 비율의 시간에 따른 변화</p>
+								</div>
+                                <p>우리가 발견한 흥미로운 점은 크게 두 가지이다.</p>
+                                <ol>
+                                    <li>첫째로, 이퀄리즘을 성평등주의로 설명하는 토픽인 토픽 8은, 더미 토픽인 6과 9를 제하면, 전체 시계열에서 가장 마이너한 토픽임을 알 수 있다. 나머지 토픽들이 대부분 강도 높은 여성혐오적 내용을 담고 있음을 고려하면, 디시인사이드에서 이퀄리즘에 대한 이야기들은 성평등주의 자체보다 여성혐오에 동반되어 페미니즘의 정당성을 훼손하기 위한 백래시를 위한 레토릭으로 사용되어 왔다는 것이다. 이는 설령 이퀄리즘이란 것이 표면적으로는 성평등을 위시한 개념이라고 하여도, 실제 용례에서는 그저 다른 종류의 여성혐오였음을 여실히 보여주는 것이다.</li>
+                                    <li>둘째는 안티페미니즘 토픽인 토픽 3이 꾸준한 경향성을 보이는 와중에 드러나는, 토픽 2와 토픽 5의 드라마틱한 엇갈림이다. 이 엇갈림은 비율적으로도, 단순 빈도로도 자명하게 드러난다.</li>
+                                </ol>
+                                <p>토픽 2는 이퀄리즘이라는 개념에 대한 의심과 비판을 담지하는 토픽으로서, 온라인에서 갑자기 발생한 정보에 대해 의심하며 경계하는 토픽이다. 이 토픽 또한 이퀄리즘이라는 개념을 사용하는 이들에 대한 배타적 태도를 드러내고 있으나, 최소한은 ‘팩트’에 기반한 판단을 요구함을 알 수 있다.</p>
+                                <p>이에 반해 토픽 5는 한국 우파 정치에 대한 토픽으로, 이 토픽은 토픽2의 감소와 매우 큰 상관관계를 보인다. 이러한 대안우파는 유럽이나 북미에서와 마찬가지로 한국에서도 수 년 전부터 세력을 키우고 있는데 이 양상이 이퀄리즘 데이터에서도 자명히 드러난다. 흥미로운 것은, 사실관계에 기반한 판단을 요청하는 토픽 2와 거의 완벽하게 엇갈린다는 사실인데, 이는 전세계의 대안우파와 마찬가지로 한국의 대안우파도 반지성주의적인 성향을 보이고 있음을 드러낸다.</p>
+                                <p>위의 두 사실을 종합하면, 이퀄리즘 현상은 한국 온라인 커뮤니티 상에서의 여성혐오가 매우 기형적인 형태임을 알 수 있다.</p>
+                                <ol>
+                                    <li>한국의 안티페미니즘은 페미니즘이 성평등에 기여하지 않는다고 말하며, ‘진정한 성평등’을 찾는 듯이 말하지만, 실제로는 매우 강도높은 여성혐오를 그대로 드러내고 있다.</li>
+                                    <li>한국의 안티 페미니스트들은 점차 대안우파적, 반지성주의적 태도를 강화하며 여성혐오를 수행하고 있다.</li>
+                                </ol>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="implications" class="page four">
+                        <h2 class="heading">제언</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="text pl-3">
+                                <!-- 제언 내용 -->
+                                <p>온라인에서 드러나는 여성혐오가 분석에서 파악한 1, 2와 같다고 할 때, 한국 사회 내의 젠더 갈등을 해결하기 위한 정책들의 타점은 명확히 달라져야 한다.</p>
+                                <ol>
+                                    <li>‘성평등’을 위해 ‘페미니즘’을 소위 ‘내려치기’하는 시도들이 사실 강도높은 여성혐오의 일면임을 다양한 교육을 통해 알려야 한다. 페미니즘에 대한 반감 그 자체가 성평등을 방해하는 큰 요인 중 하나로 분석되기 때문이다.</li>
+                                    <li>전세계의 대안우파적 움직임과 마찬가지로, 한국의 대안우파도 반지성주의와 여성혐오를 결합한 형태로 성장하고 있다. 정치적 성향과 무관하게, 반지성주의의 위험성과 미디어 리터러시를 기르는 훈련을 다방면으로 온라인 세대들에게 실시하여야 한다. </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="conclusion" class="page five">
+                        <h2 class="heading">결론</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="text pl-3">
+                                <!-- 결론 내용 -->
+                                <p>2017년부터 2023년까지의 DC인사이드 게시물 분석 결과, 이퀄리즘의 출처에 대한 의심과 검증은 감소했지만, 이퀄리즘이 만들어낸 반페미니즘 레토릭은 안정적으로 유지되었습니다. 또한 보수주의 관련 토픽이 시간이 지남에 따라 증가하는 것으로 나타났습니다.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-
-	
-	
-
-
-    <!-- Research Focus -->
-    <section class="py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="research-focus" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="h4 mb-3 text-center">연구의 시작</h3>
-                            <p class="mb-0">우리가 주목한 것은 '이퀄리즘'의 허위성이 폭로된 후에도, 대중들이 너무나 쉽게 이를 받아들이고, 이해하고 있다는 것이었다. 이념이나 사상 자체의 허위성과 진실성을 구분하기는 어렵겠으나, 그 지지기반의 사실관계를 판단하는 것은 비교적 쉽고, 이퀄리즘에 대한 근거들이 "날조"였음이 명확해진 후에도, 대중들은 이 단어를, 사상을, 이념을 하나의 성립된 개념으로써, 페미니즘에 대한 반대항으로써 쉽게 이해하고 있었다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
-	<!-- Investigation Beginning Section -->
-	<section class="investigation-section py-5">
-		<!-- Hero Section -->
-		<div class="container-fluid px-0 mb-5">
-			<div class="hero-banner position-relative">
-				<div class="container">
-					<div class="row min-vh-50 align-items-center">
-						<div class="col-lg-6 text-white">
-							<h2 class="display-3 mb-4">탐사의 시작</h2>
-							<p class="lead">우리가 이 탐사의 필요성을 느끼고 처음 조사한 것은 이퀄리즘의 고향, 나무위키였다.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Main Content -->
-		<div class="container">
-			<!-- Opening Section -->
-			<div class="row mb-6">
-				<div class="col-lg-8 offset-lg-2">
-					<div class="featured-text" data-aos="fade-up">
-						<p class="lead">과거 '이퀄리즘' 문서의 역사(위키 페이지들은 유저가 문서를 변경할 때마다 매 버전을 저장하고, '역사' 항목을 통해 과거 버전을 볼 수 있게 한다)를 살펴보며 조사를 시작했다.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Timeline Events -->
-			<!-- 2016년 2월 Event -->
-			<div class="row mb-6 align-items-center">
-				<div class="col-lg-6 order-lg-2" data-aos="fade-left">
-					<div class="event-image">
-						<div class="image-placeholder bg-light rounded-lg">
-							<!-- 이미지 추가 예정 -->
-							<div class="aspect-ratio-box"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 order-lg-1" data-aos="fade-right">
-					<div class="event-content pr-lg-5">
-						<div class="date-marker mb-3">2016년 2월 8일</div>
-						<h3 class="h4 mb-4">최초의 기록</h3>
-						<p class="event-text">나무위키에 '이퀄리즘' 항목이 처음 생성되었으며, 2017년 1월까지 내용이 추가되어 왔다. 주로 '페미니즘은 서구 주류 지성 사회에서는 이미 도태된 것이며 이퀄리즘이야말로 진정한 성평등주의이다'라는 식의 서술이 주를 이뤘고, 이를 지지하는 조작 근거들이 나열되는 식이었다.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- 2016년 8월 Event -->
-			<div class="row mb-6 align-items-center">
-				<div class="col-lg-6" data-aos="fade-right">
-					<div class="event-image">
-						<blockquote class="blockquote bg-primary text-white p-5 rounded-lg">
-							<p class="mb-0">"이퀄리즘이라는 개념이 실제로 존재하는가?"</p>
-							<footer class="blockquote-footer text-white-50 mt-3">나무위키 사용자의 문제 제기</footer>
-						</blockquote>
-					</div>
-				</div>
-				<div class="col-lg-6" data-aos="fade-left">
-					<div class="event-content pl-lg-5">
-						<div class="date-marker mb-3">2016년 8월 20일</div>
-						<h3 class="h4 mb-4">의문의 시작</h3>
-						<p class="event-text">한 나무위키 사용자가 이 개념의 실제 존재 여부에 의문을 제기하였고, 이퀄리즘이 조작된 개념인지 여부에 대한 논쟁이 약 5개월간 이어졌다.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- 2017년 1월 Event -->
-			<div class="row align-items-center">
-				<div class="col-12 mb-5" data-aos="fade-up">
-					<div class="final-event text-center py-5">
-						<div class="date-marker mb-4">2017년 1월 29일</div>
-						<h3 class="h2 mb-4">진실의 순간</h3>
-						<p class="lead mb-0">대형 언론사의 보도 이후, 나무위키는 이 항목을 '이퀄리즘 조작 사건'으로 수정했다.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Data Collection Section -->
-	<section class="data-collection-section py-5">
-		<div class="container">
-			<!-- Introduction -->
-			<div class="row mb-6">
-				<div class="col-lg-10 offset-lg-1">
-					<div class="section-intro" data-aos="fade-up">
-						<p class="lead text-primary mb-4">이후 우리는 이퀄리즘이 온라인에서 실제로 사용되는 양상을 확인하기 위해, 텍스트 데이터를 직접 수집하여 들여다 보기로 했다.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Data Source -->
-			<div class="row mb-6 align-items-center">
-				<div class="col-lg-6" data-aos="fade-right">
-					<div class="data-source-visual p-5 bg-light rounded-lg">
-						<div class="platform-icon text-center mb-4">
-							<i class="display-1 text-primary">DC</i>
-						</div>
-						<h3 class="h4 text-center mb-3">디시인사이드(DCinside)</h3>
-						<p class="text-center mb-0">국내 이용자가 가장 많은 온라인 커뮤니티 사이트</p>
-					</div>
-				</div>
-				<div class="col-lg-6" data-aos="fade-left">
-					<div class="data-source-content pl-lg-5">
-						<h3 class="h4 mb-4">데이터 수집 범위</h3>
-						<p>하위 갤러리 구분 없이 갤러리 전체 검색을 통해 '이퀄리즘'과 관련된 단어를 사용한 모든 갤러리의 글들을 모았다.</p>
-					</div>
-				</div>
-			</div>
-
-			<section class="search-keywords-section">
-				<h2 class="search-keywords-title">검색 키워드</h2>
-				<div class="keywords-grid">
-				  <div class="keyword-item">
-					<p class="keyword-text">이퀄리즘</p>
-				  </div>
-				  <div class="keyword-item">
-					<p class="keyword-text">이퀼리즘</p>
-				  </div>
-				  <div class="keyword-item">
-					<p class="keyword-text">이퀄</p>
-				  </div>
-				  <div class="keyword-item">
-					<p class="keyword-text">이퀼</p>
-				  </div>
-				  <div class="keyword-item">
-					<p class="keyword-text">이퀄리스트</p>
-				  </div>
-				  <div class="keyword-item">
-					<p class="keyword-text">이퀼리스트</p>
-				  </div>
-				</div>
-				<p class="keywords-note">오타처럼 혼용될 수 있는 검색어까지 모두 확인</p>
-			  </section>
-
-			<!-- Data Refinement -->
-			<div class="row mb-6 align-items-center">
-				<div class="col-lg-7" data-aos="fade-right">
-					<div class="refinement-content pr-lg-5">
-						<h3 class="h4 mb-4">데이터 고도화</h3>
-						<p class="mb-4">데이터 고도화를 위해 '이어폰, 헤드폰 갤러리' 등지에서 오디오 설정을 위해 사용되는 '"이퀄"라이저' 같은 용어가 포함된 경우는 모두 검수하여 삭제하였다.</p>
-					</div>
-				</div>
-				<div class="col-lg-5" data-aos="fade-left">
-					<div class="data-stats bg-light rounded-lg p-4">
-						<div class="stat-item text-center mb-4">
-							<h4 class="display-4 text-primary mb-2">2,339</h4>
-							<p class="mb-0">수집된 게시물</p>
-						</div>
-						<div class="stat-item text-center">
-							<h4 class="display-4 text-primary mb-2">8,576</h4>
-							<p class="mb-0">수집된 댓글</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- Time Series Analysis -->
-		<div class="row">
-			<div class="col-12">
-				<div class="analysis-container bg-white rounded-lg shadow-sm p-5" data-aos="fade-up">
-					<div class="row align-items-center">
-						<div class="col-lg-8 offset-lg-2">
-							<div class="chart-wrapper text-center">
-								<h4 class="mb-4">연도별 게시물 수 추이</h4>
-								<div id="postsChart" class="chart-container">
-									<!-- Chart will be rendered here -->
-								</div>
-								<p class="figure-caption text-muted mt-3">2017-2023년 게시물 수 변화 추이</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-	</section>
-
-	<!-- Data Preprocessing Section -->
-	<section id="data-preprocessing" class="mb-5">
-		<h2 class="heading mb-4" data-aos="fade-up">데이터 전처리</h2>
-		<div class="card border-0 shadow-sm">
-			<div class="card-body">
-				<p data-aos="fade-up">이후, 본문과 무관한 댓글을 다는 문화가 존재하는 디시인사이드의 특성을 고려하여, 본문과 댓글을 모두 하나의 독립된 도큐먼트로 취급하였다. 디시인사이드의 댓글은 인터넷 신문기사 등과 달리, 원문과 관련 없는 내용이 많고, 길이와 내용 측면에서 게시물과 유사한 특징을 보이기 때문이다.</p>
-				<p data-aos="fade-up">텍스트 분석을 위해 토크나이징을 하기 위해 다양한 토크나이저를 활용해 보았으며, 그 중 한국어 온라인 게시글 텍스트 분석에 유용한 Kiwi 토크나이저를 활용하였다. ‘이퀄리즘', ‘이퀄리스트’,‘페미' 등의 신조어가 하나의 토큰으로 정의되어 있지 않아 사용자 사전으로 유관 신조어들을 추가하여 각각 개별 토큰으로 포착하였고, ‘패미'나 ‘페미' 등을 같은 토큰으로 처리하도록 하였다. 토크나이징 후, 불용어들은 모두 수작업으로 처리하여 제거하였다.</p>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Topic Modeling Analysis Section -->
-	<section id="topic-modeling" class="mb-5">
-		<h2 class="heading mb-4" data-aos="fade-up">토픽 모델링 분석</h2>
-		<div class="card border-0 shadow-sm">
-			<div class="card-body">
-				<p data-aos="fade-up">데이터를 수집 및 정제한 후에는, ‘이퀄리즘'이라는 개념의 실 용례 변화를 분석하기 위해 구조적 토픽 모델링(Structural Topic Modeling)을 실시하였습니다. 각 토픽은 다음과 같습니다.</p>
-				
-				<!-- Topic Word Clouds -->
-				<div class="row">
-					<!-- Topic 1 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 1: 나무위키와 인터넷 커뮤니티에 대한 이야기</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">모르다</span>, <span style="font-size: 1.8em;">나오다</span>, <span style="font-size: 1.6em;">나무위키</span>, <span>그리고</span>, <span>인터넷</span>, <span>만나다</span>, <span>터지다</span>, <span>좋아하다</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 2 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 2: 이퀄리즘에 대한 논쟁과 비판</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">이퀄리즘</span>, <span style="font-size: 1.5em;">역겹다</span>, <span>그래서</span>, <span>어떻다</span>, <span>뒤지다</span>, <span>우기다</span>, <span>탈갤해라</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 3 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 3: 페미니즘과 반페미니즘의 시각 차이</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">페미니즘</span>, <span style="font-size: 1.8em;">아니다</span>, <span>우월주의</span>, <span>반페미</span>, <span>양성평등</span>, <span>다르다</span>, <span>여성주의</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 4 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 4: 성평등 사회를 향한 변화와 노력</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">성평등</span>, <span style="font-size: 1.8em;">만들다</span>, <span>버리다</span>, <span>꺼지다</span>, <span>어쩌다</span>, <span>바꾸다</span>, <span>미치다</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 5 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 5: 정치와 페미니즘: 민주당의 입장</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">보이다</span>, <span style="font-size: 1.8em;">아니다</span>, <span>올리다</span>, <span>이렇다</span>, <span>민주당</span>, <span>문재인</span>, <span>그리고</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 6 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 6: 새로운 이미지와 캐릭터 창조</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">대하다</span>, <span style="font-size: 1.8em;">만들다</span>, <span>이미지</span>, <span>새롭다</span>, <span>아니다</span>, <span>강하다</span>, <span>위하다</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 7 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 7: 페미니스트와 온라인 커뮤니티의 갈등</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">페미니스트</span>, <span style="font-size: 1.5em;">워마드</span>, <span>트위터</span>, <span>똑같다</span>, <span>이러다</span>, <span>손가락</span>, <span>두껍다</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 8 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 8: 이퀄리스트와 평등주의의 이해</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">이퀄리스트</span>, <span style="font-size: 1.5em;">위하다</span>, <span>그러다</span>, <span>나쁘다</span>, <span>당하다</span>, <span>웃기다</span>, <span>다니다</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Topic 9 -->
-					<div class="col-md-4 mb-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center">
-								<h5 class="card-title">Topic 9: 개인의 생각과 사회적 현상에 대한 고찰</h5>
-								<div class="word-cloud" style="font-size: 0.8em;">
-									<span style="font-size: 2em;">그렇다</span>, <span style="font-size: 1.8em;">대하다</span>, <span>아니다</span>, <span>가지다</span>, <span>못하다</span>, <span>이야기</span>, <span>느끼다</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<p class="figure-caption mt-3">토픽 별 주요 단어를 강조하여 시각화하였습니다. 각 토픽은 해당 주제를 가장 잘 드러내는 단어들로 구성되어 있습니다.</p>
-			</div>
-		</div>
-	</section>
-
-	
-    <!-- Methodology Section -->
-    <section id="methodology" class="mb-5">
-      <h2 class="heading mb-4" data-aos="fade-up">연구방법</h2>
-      <div class="card border-0 shadow-sm">
-          <div class="card-body">
-              <p data-aos="fade-up">본 연구는 혼합 연구방법론을 채택하여 양적, 질적 분석을 수행했습니다.</p>
-          <div class="table-container" data-aos="fade-up">
-        <h4 class="mb-4">Topics by STM (Structural Topic Model)</h4>
-        
-        <p class="text-muted mt-2"><small>* STM(Structural Topic Model)을 통해 추출된 주요 토픽과 관련 단어들</small></p>
-        </div>
-                  </div>
-              </div>
-    </section>
-
-    <!-- Data Collection Section -->
-    <section id="data-collection" class="mb-5">
-      <h2 class="heading mb-4" data-aos="fade-up">데이터 수집</h2>
-      <div class="card border-0 shadow-sm">
-          <div class="card-body">
-              <p data-aos="fade-up">2017년부터 2023년까지의 DC인사이드 게시물과 댓글을 분석했습니다.</p>
-              
-              
-
-              <div class="chart-wrapper" data-aos="fade-up">
-                  <h4 class="mb-4">Figure 2: 연도별 게시물 수 추이</h4>
-                  <div id="postsChart" style="height: 400px;"></div>
-                  <p class="figure-caption">2017-2023년 게시물 수 변화 추이</p>
-              </div>
-          </div>
-      </div>
-    </section>
-
-
-
-
-    <!-- Analysis Section -->
-    <section id="analysis" class="mb-5">
-      <h2 class="heading mb-4" data-aos="fade-up">분석</h2>
-      <div class="card border-0 shadow-sm">
-          <div class="card-body">
-              <p data-aos="fade-up">구조적 토픽 모델링(STM) 분석 결과입니다.</p>
-              
-              <div class="chart-wrapper mb-5" data-aos="fade-up">
-                  <h4 class="mb-4">Figure 3: 토픽 비율의 시계열 변화</h4>
-                  <div id="proportionsChart" style="height: 400px;"></div>
-                  <p class="figure-caption">각 토픽 비율의 시간에 따른 변화</p>
-              </div>
-
-              <div class="chart-wrapper mb-5" data-aos="fade-up">
-                  <h4 class="mb-4">Figure 4: 토픽 빈도의 시계열 변화</h4>
-                  <div id="frequenciesChart" style="height: 400px;"></div>
-                  <p class="figure-caption">각 토픽 출현 빈도의 시간에 따른 변화</p>
-              </div>
-
-              <div class="chart-wrapper" data-aos="fade-up">
-                  <h4 class="mb-4">Figure 5: Topic 2와 Topic 5의 연도별 비교</h4>
-                  <div id="comparisonChart" style="height: 400px;"></div>
-                  <p class="figure-caption">주요 대립 토픽의 시간에 따른 변화 비교</p>
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <!-- Conclusion Section -->
-    <section id="conclusion" class="py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="heading mb-4 text-center" data-aos="fade-up">결론</h2>
-                [이전 결론 내용...]
-            </div>
-        </div>
-    </section>
-
-  </div>
-
-
-
-
-
-
-
-    <!-- Core JavaScript -->
+    
+    <!-- 필수 JS 파일들 -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -600,9 +241,8 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    
-    <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
     <script src="js/charts.js"></script>
+    
 </body>
 </html>
