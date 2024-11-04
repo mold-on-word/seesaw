@@ -81,44 +81,81 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error rendering topic chart:', error);
         }
     }
-  
-    // 2. Posts Over Time Bar Chart
-    if (document.querySelector("#postsChart")) {
-        const postsData = {
-            years: [2017, 2018, 2019, 2020, 2021, 2022, 2023],
-            posts: [480, 550, 200, 190, 360, 210, 100]
-        };
-  
-        try {
-            new ApexCharts(document.querySelector("#postsChart"), {
-                ...commonOptions,
-                chart: {
-                    ...commonOptions.chart,
-                    type: 'bar',
-                    height: 400
-                },
-                series: [{
-                    name: 'Number of Posts',
-                    data: postsData.posts
-                }],
-                xaxis: {
-                    categories: postsData.years,
-                    title: { text: 'Year' }
-                },
-                yaxis: {
-                    title: { text: 'Number of Posts' },
-                    min: 0
-                },
-                title: {
-                    text: 'Number of Posts Over Time',
-                    align: 'center'
-                },
-                colors: ['#4ECDC4']
-            }).render();
-        } catch (error) {
-            console.error('Error rendering posts chart:', error);
-        }
+  // Posts Over Time Bar Chart (게시글 수)
+  if (document.querySelector("#postsChart")) {
+    const postsData = {
+        years: [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+        posts: [496, 551, 207, 203, 371, 220, 99, 192]
+    };
+
+    try {
+        new ApexCharts(document.querySelector("#postsChart"), {
+            ...commonOptions,
+            chart: {
+                ...commonOptions.chart,
+                type: 'bar',
+                height: 400
+            },
+            series: [{
+                name: 'Number of Posts',
+                data: postsData.posts
+            }],
+            xaxis: {
+                categories: postsData.years,
+                title: { text: 'Year' }
+            },
+            yaxis: {
+                title: { text: 'Number of Posts' },
+                min: 0
+            },
+            title: {
+                text: 'Number of Posts Over Time',
+                align: 'center'
+            },
+            colors: ['#4ECDC4']
+        }).render();
+    } catch (error) {
+        console.error('Error rendering posts chart:', error);
     }
+}
+
+// Posts and Replies Over Time Bar Chart (댓글 포함 총 카운트)
+if (document.querySelector("#postsRepliesChart")) {
+    const postsRepliesData = {
+        years: [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+        counts: [1604, 3997, 780, 838, 1374, 1081, 447, 794]
+    };
+
+    try {
+        new ApexCharts(document.querySelector("#postsRepliesChart"), {
+            ...commonOptions,
+            chart: {
+                ...commonOptions.chart,
+                type: 'bar',
+                height: 400
+            },
+            series: [{
+                name: 'Total Count (Posts + Replies)',
+                data: postsRepliesData.counts
+            }],
+            xaxis: {
+                categories: postsRepliesData.years,
+                title: { text: 'Year' }
+            },
+            yaxis: {
+                title: { text: 'Total Count' },
+                min: 0
+            },
+            title: {
+                text: 'Total Count of Posts and Replies Over Time',
+                align: 'center'
+            },
+            colors: ['#FF6B6B']
+        }).render();
+    } catch (error) {
+        console.error('Error rendering posts and replies chart:', error);
+    }
+}
   
     // 3. Topic Proportions Over Time Line Chart
     if (document.querySelector("#proportionsChart")) {
