@@ -146,15 +146,10 @@
 
                     <div id="analysis" class="page three">
                         <h2 class="heading">데이터 분석</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <div class="text pl-3">
-                                <!-- 분석 결과 -->
-                                <p>데이터를 수집 및 정제한 후에는, ‘이퀄리즘'이라는 개념의 실 용례 변화를 분석하기 위해 구조적 토픽 모델링(Structural Topic Modeling)을 실시하였다. 디시인사이드 데이터에 토픽 모델링을 수행하여 총 9개의 토픽으로 정리하였고, 그 핵심 단어들은 다음과 같다.</p>
-                                
-                                <!-- 토픽 모델링 테이블 -->
-                                <!-- Topic 1104 Chart Section -->
-                                <div class="chart-wrapper" data-aos="fade-up">
-                                    <h4 class="mb-4">주요 토픽 분석</h4>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>데이터를 수집 및 정제한 후에는, '이퀄리즘'이라는 개념의 실 용례 변화를 분석하기 위해 구조적 토픽 모델링(Structural Topic Modeling)을 실시하였다. 디시인사이드 데이터에 토픽 모델링을 수행하여 총 9개의 토픽으로 정리하였고, 그 핵심 단어들은 다음과 같다.</p>
+                                <div class="table-responsive">
                                     <table class="table table-bordered" style="width: 100%; max-width: 800px; margin: 0 auto;">
                                         <thead>
                                         <tr>
@@ -211,39 +206,54 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <p class="figure-caption">STM 토픽 모델링</p>
+                                    <!-- <p class="figure-caption">STM 토픽 모델링</p> -->
                                 </div>
-                                <p>더미 토픽으로는 토픽 6과 9가 있었으며, 이후 통계량 분석에서는 해당 토픽들은 제외하였다.</p>
-                                <p>토픽 별 빈도와 비율은 아래와 같았으며, 이 중 3번 토픽같은 백래쉬 토픽이 꾸준히 상위를 점유하는 것을 보였다.</p>
-                                <!-- 주제 분포 Figure -->
-								<div class="chart-container">
-									<div id="topicChart" style="height: 400px;"></div>
-									<p class="figure-caption">토픽별 빈도 및 비율</p>
-								  </div>
-                                <!-- 토픽 비율 시계열 차트 -->
-								<div class="chart-wrapper" data-aos="fade-up">
-									<div id="proportionsChart";"></div>
-									<p class="figure-caption">각 토픽 비율의 시간에 따른 변화</p>
-								</div>
-                                <p>우리가 발견한 흥미로운 점은 크게 두 가지이다.</p>
-                                <ol>
-                                    <li>첫째로, 이퀄리즘을 성평등주의로 설명하는 토픽인 토픽 8은, 더미 토픽인 6과 9를 제하면, 전체 시계열에서 가장 마이너한 토픽임을 알 수 있다. 나머지 토픽들이 대부분 강도 높은 여성혐오적 내용을 담고 있음을 고려하면, 디시인사이드에서 이퀄리즘에 대한 이야기들은 성평등주의 자체보다 여성혐오에 동반되어 페미니즘의 정당성을 훼손하기 위한 백래시를 위한 레토릭으로 사용되어 왔다는 것이다. 이는 설령 이퀄리즘이란 것이 표면적으로는 성평등을 위시한 개념이라고 하여도, 실제 용례에서는 그저 다른 종류의 여성혐오였음을 여실히 보여주는 것이다.</li>
-                                    <div class="chart-wrapper" data-aos="fade-up">
-                                        <div id="comparisonChart" style="height:80%;width: 80%;"></div>
-                                        <p class="figure-caption">각 토픽 비율의 시간에 따른 변화</p>
-                                    </div>
-                                    <li>둘째는 안티페미니즘 토픽인 토픽 3이 꾸준한 경향성을 보이는 와중에 드러나는, 토픽 2와 토픽 5의 드라마틱한 엇갈림이다. 이 엇갈림은 비율적으로도, 단순 빈도로도 자명하게 드러난다.</li>
-                                </ol>
-                                <p>토픽 2는 이퀄리즘이라는 개념에 대한 의심과 비판을 담지하는 토픽으로서, 온라인에서 갑자기 발생한 정보에 대해 의심하며 경계하는 토픽이다. 이 토픽 또한 이퀄리즘이라는 개념을 사용하는 이들에 대한 배타적 태도를 드러내고 있으나, 최소한은 ‘팩트’에 기반한 판단을 요구함을 알 수 있다.</p>
-                                <p>이에 반해 토픽 5는 한국 우파 정치에 대한 토픽으로, 이 토픽은 토픽2의 감소와 매우 큰 상관관계를 보인다. 이러한 대안우파는 유럽이나 북미에서와 마찬가지로 한국에서도 수 년 전부터 세력을 키우고 있는데 이 양상이 이퀄리즘 데이터에서도 자명히 드러난다. 흥미로운 것은, 사실관계에 기반한 판단을 요청하는 토픽 2와 거의 완벽하게 엇갈린다는 사실인데, 이는 전세계의 대안우파와 마찬가지로 한국의 대안우파도 반지성주의적인 성향을 보이고 있음을 드러낸다.</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">토픽별 빈도 및 비율</h4>
+                            <div id="topicChart" style="height: 400px;"></div>
+                            <!-- <p class="text-muted">토픽별 빈도 및 비율</p> -->
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">토픽 비율의 시간에 따른 변화</h4>
+                            <div id="proportionsChart" style="width: 100%"></div>
+                            <!-- <p class="text-muted">각 토픽 비율의 시간에 따른 변화</p> -->
+                        </div>
+                    
+                    
+                        <div class="row">
+                            <div class="col-md-12">
+                                        <h4 class="card-title">주요 발견사항</h4>
+                                        <p>우리가 발견한 흥미로운 점은 크게 두 가지이다.</p>
+                    
+                                        <div class="finding-item mb-4">
+                                            <h5>1. 이퀄리즘의 실제 용례</h5>
+                                            <p>이퀄리즘을 성평등주의로 설명하는 토픽인 토픽 8은, 더미 토픽인 6과 9를 제하면, 전체 시계열에서 가장 마이너한 토픽임을 알 수 있다. 나머지 토픽들이 대부분 강도 높은 여성혐오적 내용을 담고 있음을 고려하면, 디시인사이드에서 이퀄리즘에 대한 이야기들은 성평등주의 자체보다 여성혐오에 동반되어 페미니즘의 정당성을 훼손하기 위한 백래시를 위한 레토릭으로 사용되어 왔다는 것이다. 이는 설령 이퀄리즘이란 것이 표면적으로는 성평등을 위시한 개념이라고 하여도, 실제 용례에서는 그저 다른 종류의 여성혐오였음을 여실히 보여주는 것이다.</p>
+                                        </div>
+                    
+                                        <div class="finding-item">
+                                            <h5>2. 토픽 간의 상관관계</h5>
+                                            <p>안티페미니즘 토픽인 토픽 3이 꾸준한 경향성을 보이는 와중에 드러나는, 토픽 2와 토픽 5의 드라마틱한 엇갈림이다. 이 엇갈림은 비율적으로도, 단순 빈도로도 자명하게 드러난다.</p>
+                                        </div>
+                    
+                                        <div id="comparisonChart" style="height: 400px; margin-top: 20px;"></div>
+                                        <!-- <p class="text-muted">토픽 2와 토픽 5의 시간에 따른 변화 비교</p> -->
+
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12">
                                 <p>위의 두 사실을 종합하면, 이퀄리즘 현상은 한국 온라인 커뮤니티 상에서의 여성혐오가 매우 기형적인 형태임을 알 수 있다.</p>
-                                <ol>
-                                    <li>한국의 안티페미니즘은 페미니즘이 성평등에 기여하지 않는다고 말하며, ‘진정한 성평등’을 찾는 듯이 말하지만, 실제로는 매우 강도높은 여성혐오를 그대로 드러내고 있다.</li>
-                                    <li>한국의 안티 페미니스트들은 점차 대안우파적, 반지성주의적 태도를 강화하며 여성혐오를 수행하고 있다.</li>
-                                </ol>       
+                                        <ol>
+                                            <li>한국의 안티페미니즘은 페미니즘이 성평등에 기여하지 않는다고 말하며, '진정한 성평등'을 찾는 듯이 말하지만, 실제로는 매우 강도높은 여성혐오를 그대로 드러내고 있다.</li>
+                                            <li>한국의 안티 페미니스트들은 점차 대안우파적, 반지성주의적 태도를 강화하며 여성혐오를 수행하고 있다.</li>
+                                        </ol>
                             </div>
                         </div>
                     </div>
+                    
 
                     <div id="implications" class="page four">
                         <h2 class="heading">제언</h2>

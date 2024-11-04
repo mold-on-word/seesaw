@@ -161,14 +161,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // 3. Topic Proportions Over Time Line Chart
     if (document.querySelector("#proportionsChart")) {
         const years = [2018, 2020, 2022];
+        const chartContainer = document.querySelector("#proportionsChart");
+        
+        // 차트 컨테이너의 너비를 가져옵니다.
+        const containerWidth = chartContainer.offsetWidth;
         try {
             new ApexCharts(document.querySelector("#proportionsChart"), {
                 ...commonOptions,
                 chart: {
                     ...commonOptions.chart,
                     type: 'line',
-                    height: 400,
-                    width: '80%',
+                    height: containerWidth*0.7,
+                    width: '100%',
                     align: 'center',
                 },
                 series: [
@@ -218,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 chart: {
                     ...commonOptions.chart,
                     type: 'line',
-                    height: 400
+                    height: 800,
                 },
                 series: [
                     { name: 'Topic 1', data: [350, 75, 80] },
@@ -292,10 +296,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     align: 'center'
                 },
                 stroke: {
-                    width: 2,
-                    curve: 'smooth'
+                    width: 4,
+            
+                    // curve: 'smooth'
                 },
-                colors: ['#4ECDC4', '#FFEEAD']
+                colors: ['#4ECDC4', '#FF66BB']
             }).render();
         } catch (error) {
             console.error('Error rendering comparison chart:', error);
