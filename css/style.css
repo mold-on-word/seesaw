@@ -9991,3 +9991,16 @@ textarea.form-control {
 .chart-wrapper {
   margin: 100px;
 }
+
+  .custom-tooltip {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  .custom-tooltip strong {
+      color: #333;
+      font-size: 14px;
+  }
+
